@@ -1,0 +1,622 @@
+div {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+div:before, div:after {
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+
+body {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 2vw;
+  font-family: "Source Serif Pro", serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  background: #111111;
+}
+
+.btn {
+  position: relative;
+  width: 15vw;
+  height: 4vw;
+  margin: 2vw;
+  text-align: center;
+  line-height: 4vw;
+  cursor: pointer;
+}
+.btn1 {
+  border: 0.1vw solid #306b34;
+}
+.btn1:after {
+  width: 100%;
+  height: 100%;
+  background: #82d173;
+  mix-blend-mode: lighten;
+  transition: all 0.5s ease;
+  transform-origin: center;
+  transform: scale(0);
+}
+.btn1:hover:after {
+  transform: scale(1);
+}
+.btn2 {
+  border: 0.1vw solid #306b34;
+}
+.btn2:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #82d173;
+  mix-blend-mode: lighten;
+  transition: all 0.5s ease;
+  transform-origin: center;
+  transform: scale(0);
+}
+.btn2:hover:after {
+  border-radius: 0;
+  transform: scale(1);
+}
+.btn3 {
+  border: 0.1vw solid #306b34;
+}
+.btn3:after {
+  width: 100%;
+  height: 100%;
+  background: #82d173;
+  mix-blend-mode: lighten;
+  transition: all 0.5s ease;
+  transform-origin: center;
+  transform: scale(0) rotate(0);
+}
+.btn3:hover:after {
+  transform: scale(1) rotate(180deg);
+}
+.btn4 {
+  border: 0.1vw solid #306b34;
+}
+.btn4:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #82d173;
+  mix-blend-mode: lighten;
+  transition: all 0.5s ease;
+  transform-origin: center;
+  transform: scale(0) rotate(0);
+}
+.btn4:hover:after {
+  border-radius: 0;
+  transform: scale(1) rotate(180deg);
+}
+.btn5 {
+  border: 0.1vw solid #306b34;
+}
+.btn5:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #82d173;
+  mix-blend-mode: lighten;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: center;
+  transform: scale(0) rotate(0);
+}
+.btn5:hover:after {
+  border-radius: 0;
+  transform: scale(1) rotate(180deg);
+}
+.btn6 {
+  border: 0.5vw solid #42113c;
+  line-height: 3vw;
+  transition: all 0.5s 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.btn6:hover {
+  border: 0 solid #42113c;
+  line-height: 4vw;
+}
+.btn6:after {
+  width: 100%;
+  height: 100%;
+  background: #4d243d;
+  mix-blend-mode: lighten;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transform-origin: center;
+  transform: scale(0);
+}
+.btn6:hover:after {
+  transform: scale(1);
+}
+.btn7 {
+  border: 0.5vw solid #42113c;
+  line-height: 3vw;
+  transition: all 0.5s 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.btn7:hover {
+  border: 0 solid #42113c;
+  line-height: 4vw;
+}
+.btn7:after {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: #4d243d;
+  mix-blend-mode: lighten;
+  transition: width 0.25s cubic-bezier(0.42, 0, 0.58, 1), height 0.5s cubic-bezier(0.42, 0, 0.58, 1), left 0.25s cubic-bezier(0.42, 0, 0.58, 1), top 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.btn7:hover:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.btn8 {
+  border: 0.5vw solid #42113c;
+  line-height: 3vw;
+  transition: all 0.5s 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.btn8:hover {
+  border: 0 solid #42113c;
+  line-height: 4vw;
+}
+.btn8:after {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: #4d243d;
+  mix-blend-mode: lighten;
+  transition: width 0.25s cubic-bezier(0.42, 0, 0.58, 1), height 0.5s cubic-bezier(0.42, 0, 0.58, 1), left 0.25s cubic-bezier(0.42, 0, 0.58, 1), top 0.5s cubic-bezier(0.42, 0, 0.58, 1), transform 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transform-origin: center;
+  transform: rotate(0);
+}
+.btn8:hover:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+}
+.btn9 {
+  border: 0.5vw solid #42113c;
+  line-height: 3vw;
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.btn9:hover {
+  border: 0 solid #42113c;
+  line-height: 4vw;
+}
+.btn9:after {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #4d243d;
+  mix-blend-mode: lighten;
+  transition: width 0.25s cubic-bezier(0.42, 0, 0.58, 1), height 0.5s cubic-bezier(0.42, 0, 0.58, 1), left 0.25s cubic-bezier(0.42, 0, 0.58, 1), top 0.5s cubic-bezier(0.42, 0, 0.58, 1), transform 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transform-origin: center;
+  transform: rotate(0);
+}
+.btn9:hover:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  transform: rotate(180deg);
+}
+.btn10 {
+  border: 0.5vw solid #42113c;
+  line-height: 3vw;
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.btn10:hover {
+  border: 0 solid #42113c;
+  line-height: 4vw;
+}
+.btn10:after {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #4d243d;
+  mix-blend-mode: lighten;
+  transition: width 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), height 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), left 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), top 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: center;
+  transform: rotate(0);
+}
+.btn10:hover:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  transform: rotate(180deg);
+}
+.btn11 {
+  border: 0.2vw solid #82d173;
+  border-radius: 0;
+  line-height: 3.6vw;
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.btn11:hover {
+  border-radius: 1vw;
+}
+.btn11:after {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #306b34;
+  mix-blend-mode: lighten;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.btn11:hover:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25vw;
+}
+.btn12 {
+  border: 0.2vw solid #82d173;
+  border-radius: 0;
+  line-height: 3.6vw;
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.btn12:hover {
+  border-color: transparent;
+}
+.btn12:after {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #82d173;
+  mix-blend-mode: lighten;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.btn12:hover:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25vw;
+}
+.btn13 {
+  border: 0.2vw solid #82d173;
+  border-radius: 0;
+  line-height: 3.6vw;
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.btn13:hover {
+  border-color: transparent;
+}
+.btn13:after {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #306b34;
+  mix-blend-mode: lighten;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.btn13:hover:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25vw;
+}
+.btn14 {
+  line-height: 1.5vw;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.btn14:hover {
+  border-color: transparent;
+  line-height: 4vw;
+}
+.btn14:after {
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: #306b34;
+  mix-blend-mode: lighten;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.btn14:hover:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25vw;
+}
+.btn15 {
+  border: 0.1vw solid #82d173;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background: #306b34;
+}
+.btn15:hover {
+  border-width: 1.5vw 3vw;
+  line-height: 1vw;
+}
+.btn16 {
+  border: 0.1vw solid #306b34;
+}
+.btn16:before, .btn16:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #42113c;
+  mix-blend-mode: lighten;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: center;
+  transform: scale(0) rotate(0);
+}
+.btn16:hover:before {
+  border-radius: 0;
+  transform: scale(1) rotate(-180deg);
+}
+.btn16:hover:after {
+  border-radius: 0;
+  transform: scale(1) rotate(180deg);
+}
+.btn17 {
+  border: 0.1vw solid #306b34;
+}
+.btn17:before, .btn17:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #4d243d;
+  mix-blend-mode: lighten;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: center;
+  transform: scale(0) rotate(0);
+}
+.btn17:hover:before {
+  border-radius: 0;
+  transform: scale(1) rotate(-180deg);
+}
+.btn17:after {
+  background: #42113c;
+}
+.btn17:hover:after {
+  border-radius: 0;
+  transform: scale(1) rotate(180deg);
+}
+.btn18 {
+  border: 0.1vw solid #306b34;
+}
+.btn18:before, .btn18:after {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: #4d243d;
+  mix-blend-mode: lighten;
+  transition: width 0.25s 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), height 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55), left 0.25s 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), top 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.btn18:after {
+  transition: width 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55), height 0.25s 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), left 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55), top 0.25s 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background: #42113c;
+}
+.btn18:hover:before, .btn18:hover:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.btn19 {
+  border: 0.1vw solid #306b34;
+}
+.btn19:before, .btn19:after {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: #4d243d;
+  mix-blend-mode: lighten;
+  transition: width 0.5s 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55), height 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55), left 0.5s 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55), top 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.btn19:after {
+  transition: width 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), height 0.25s 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), left 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), top 0.25s 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background: #42113c;
+}
+.btn19:hover:before, .btn19:hover:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.btn20 {
+  border: 0.1vw solid #306b34;
+}
+.btn20:before, .btn20:after {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: #4d243d;
+  mix-blend-mode: lighten;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: rotate(0);
+}
+.btn20:after {
+  background: #42113c;
+}
+.btn20:hover:before, .btn20:hover:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(170deg);
+}
+.btn20:hover:after {
+  transform: rotate(-170deg);
+}
+.btn21 {
+  background: #306b34;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.btn21:after {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  mix-blend-mode: lighten;
+  background: #82d173;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.btn21:hover {
+  background: transparent;
+}
+.btn21:hover:after {
+  width: 100%;
+  height: 100%;
+}
+.btn22 {
+  background: #306b34;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.btn22:after {
+  top: 0;
+  left: 100%;
+  width: 0;
+  height: 100%;
+  mix-blend-mode: lighten;
+  background: #82d173;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.btn22:hover {
+  background: transparent;
+}
+.btn22:hover:after {
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+.btn23 {
+  background: #306b34;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.btn23:before, .btn23:after {
+  top: 0;
+  width: 0;
+  height: 100%;
+  mix-blend-mode: overlay;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.btn23:before {
+  left: 0;
+  width: 0;
+  background: #4d243d;
+}
+.btn23:after {
+  left: 100%;
+  width: 0;
+  background: #42113c;
+}
+.btn23:hover:before {
+  width: 100%;
+}
+.btn23:hover:after {
+  width: 100%;
+  left: 0;
+}
+.btn24 {
+  background: #306b34;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  filter: hue-rotate(0);
+}
+.btn24:hover {
+  filter: hue-rotate(360deg);
+}
+.btn24:before, .btn24:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #4d243d;
+  mix-blend-mode: overlay;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: center;
+  transform: scale(0) rotate(0);
+}
+.btn24:hover:before {
+  border-radius: 0;
+  transform: scale(1) rotate(-180deg);
+}
+.btn24:after {
+  background: #42113c;
+}
+.btn24:hover:after {
+  border-radius: 0;
+  transform: scale(1) rotate(180deg);
+}
+.btn25 {
+  background: #306b34;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  filter: hue-rotate(0);
+}
+.btn25:hover {
+  filter: hue-rotate(360deg);
+}
+.btn25:before, .btn25:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #4d243d;
+  mix-blend-mode: overlay;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: center;
+  transform: scale(0) rotate(0);
+}
+.btn25:hover:before {
+  transform: scale(1) rotate(-180deg);
+}
+.btn25:after {
+  background: #42113c;
+}
+.btn25:hover:after {
+  border-radius: 2vw;
+  transform: scale(1) rotate(180deg);
+}
+
+.message {
+  position: absolute;
+  right: 0.5vw;
+  bottom: 1vw;
+  max-width: 30vw;
+  font-size: 0.5em;
+  font-family: "Open Sans", sans-serif;
+}
+.message a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+}
+.message a:hover {
+  border-width: 3px;
+}
+
+/*# sourceMappingURL=styles.css.map */
